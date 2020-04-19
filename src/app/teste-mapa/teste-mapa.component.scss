@@ -1,0 +1,54 @@
+#map_canvas {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+
+.flareUpNone{
+  display: none;
+}
+
+.flareUp{
+  background-color: white;
+  width: 80%;
+  height: 40%;
+  border-radius: 20px;
+}
+
+.titleFlareUp{
+  width: 100%;
+  background-color: #f8d949;
+  position: absolute;
+  top: 0;
+  border-radius: 20px  20px 0px  0px;
+  color: white;
+  font-family: cocogoose;
+}
+
+.textoFlareUp{
+  position: relative;
+  top: 30%;
+  left: 13%;
+  font-family: cocogooseLigth;
+  color: rgb(100, 100, 100);
+}
+
+ion-icon{
+  background-color: #f8d949;
+}
+
+@font-face{
+  font-family: cocogooseLigth;
+  src: url('../../assets/Cocogoose\ Pro\ Light-trial.ttf');
+}
+
+
+@font-face{
+  font-family: cocogoose;
+  src: url('../../assets/Cocogoose\ Pro-trial.ttf');
+}

@@ -1,0 +1,15 @@
+<div id="triggerSlider" class="animScroll" *ngIf='habilitado'>
+    <div class="indicador">
+        <div class="scroll"></div>
+    </div>
+</div>
+<ion-header mode="ios" id="header" class="header">
+    <ion-toolbar mode="md" style="opacity: .4;">
+        <div class="toolbackground">
+            <ion-icon src="assets/icon/arrow.svg"></ion-icon>
+        </div>
+    </ion-toolbar>
+</ion-header>
+<ion-content padding>
+    <ng-content></ng-content>
+</ion-content>

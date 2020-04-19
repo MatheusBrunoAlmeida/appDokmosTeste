@@ -1,0 +1,117 @@
+<ion-content>
+
+  <div class="bg-alter">
+    <div class="bgs">
+      <div class="waves">
+        <img src="../../assets/waves3.svg" alt="">
+      </div>
+    </div>
+    <div class="bgs">
+      <div class="waves">
+        <img src="../../assets/waves4.svg" alt="">
+      </div>
+    </div>
+    <div class="bgs">
+      <div class="waves">
+        <img src="../../assets/waves2.svg" alt="">
+      </div>
+    </div>
+    <div class="bgs">
+      <div class="waves">
+        <img src="../../assets/waves.svg" alt="">
+      </div>
+    </div>
+
+    <div class="dots-left">
+      <img src="../../assets/dots.png" alt="">
+    </div>
+
+    <div class="dots-right">
+      <img src="../../assets/dots.png" alt="">
+    </div>
+
+    <div class="anim-dokmos-up">
+      <div class="itm"></div>
+      <div class="itm"></div>
+      <div class="itm"></div>
+    </div>
+
+    <div class="anim-dokmos-down">
+      <div class="itm"></div>
+      <div class="itm"></div>
+      <div class="itm"></div>
+    </div>
+
+  </div>
+
+  <div id="div-scroll">
+    <ion-grid>
+      <!-- <ion-row style="margin-left: 20%; margin-top: 10%; color: whitesmoke;">
+        <ion-col col-2>
+          <h1>
+            <p>Seja <br /> bem vindo!
+          </h1>
+        </ion-col>
+      </ion-row> -->
+
+      <ion-row justify-content-center class="aling-center rowLogo">
+        <ion-col col-6>
+          <div class="logoDokmos" style="min-height: 182px;">
+            <img class="logo" src="../../assets/logo.png" alt="">
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <form id="frm" action="">
+        <div class="inputs formulario">
+          <ion-row justify-content-center class="aling-center">
+            <ion-col col-12>
+              <input type="text" placeholder="Email:" name="email" [(ngModel)]="userLogin.email"
+                style="background-color: rgba(240, 248, 255, 0);">
+            </ion-col>
+          </ion-row>
+          <ion-row justify-content-center class="aling-center">
+            <ion-col col-12>
+              <input type="password" placeholder="Senha:" name="senha" [(ngModel)]="userLogin.password"
+                style="background-color: rgba(240, 248, 255, 0); position: relative; top: -7px;">
+            </ion-col>
+          </ion-row>
+          <ion-row justify-content-center class="aling-center">
+            <ion-col col-12>
+              <input type="submit" id="submit" value="ENTRAR" (click)="login()">
+            </ion-col>
+          </ion-row>
+          <ion-row justify-content-center class="aling-center">
+            <ion-col col-12 routerLink="/redefinir-senha">
+              <a href="#">Esqueceu sua senha?</a>
+            </ion-col>
+          </ion-row>
+          <ion-row justify-content-center class="aling-center">
+            <ion-col col-12 routerLink="/cadastrar">
+              <a href="#">Registrar</a>
+            </ion-col>
+          </ion-row>
+          <button id="facebook" (click)="loginFacebook()">
+            <ion-icon class="icon" name="logo-facebook"></ion-icon>Entrar com o facebook
+          </button>
+
+          <!-- Aqui - Conteúdo para rolar abaixo do Formuário-->
+
+        </div>
+
+      </form>
+
+    </ion-grid>
+
+  </div>
+
+</ion-content>
+
+<app-slider [indicadorScroll]=true background="rgba(255, 0, 0, 0);">
+  <video src="http://duubot.com/duubot.com/video.mp4" controls></video>
+  <!-- <div class="apresentacao">
+    <h1>Oficial Dokmos</h1>
+    <p>Aprovados por Deus</p>
+    <p>Somos o departamento de adolescentes da igreja Fonte da Vida</p>
+  </div> -->
+</app-slider>

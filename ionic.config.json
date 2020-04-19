@@ -1,0 +1,7 @@
+{
+  "name": "SementesCampea",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,88 @@
+<ion-header no-border class="ion-no-border">
+  <ion-toolbar transparent>
+    <ion-buttons slot="start"  (click)="voltar()">
+      <ion-icon name="chevron-back-outline" size="large"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <div  class="bg">
+    <div class="wvs_flareup">
+      <img src="../../assets/waves_flareup_animate.svg" alt="">
+    </div>
+    <div class="t-flareup">
+      <img src="../../assets/flare_up.png" alt="">
+    </div>
+    <ion-grid>
+     <!--  <button id="voltar" (click)="voltar()">
+        <ion-icon class="icon" name="arrow-back"></ion-icon>
+      </button> -->
+      <div class="descricao">
+        <ion-row justify-content-center class="aling-start">
+          <span>DESCIRÇÃO DO QUE É FLAREUP</span>
+        </ion-row>
+        <ion-row justify-content-center class="aling-start">
+          <span>DESCIRÇÃO DO QUE É FLAREUP</span>
+        </ion-row>
+        <ion-row justify-content-center class="aling-start">
+          <span>DESCIRÇÃO DO QUE É FLAREUP</span>
+        </ion-row>
+        <ion-row justify-content-center class="aling-start">
+          <span>DESCIRÇÃO DO QUE É FLAREUP</span>
+        </ion-row>
+      </div>
+      <div class="sucesso none">
+        <div class="sucessoTitulo">
+          <p>Cadastrar Escola</p>
+        </div>
+        <div class="sucessoTexto">
+          Sua solicitação foi enviada com sucesso, em breve entraremos em contato
+          para confirmarmos mais informações.
+        </div>
+        <button class="btnFechar" (click)="fechar()">Fechar</button>
+      </div>
+    </ion-grid>
+    <div class="bgBaixo">
+      <ion-grid>
+        <ion-row justify-content-center class="aligin-center flex">
+          <button class="btn1" (click)="getMap()"><span>ONDE ESTAMOS <ion-icon class="icon" name="location"></ion-icon>
+            </span></button>
+          <button class="btn2" (click)="getForm()"><span>CADASTRAR ESCOLA</span></button>
+        </ion-row>
+      </ion-grid>
+    </div>
+  <div class="bgFormNone">
+    
+    <ion-row justify-content-center class="aligin-center flex">
+      <ion-col col-12>
+        <input type="text" placeholder="Nome:" [(ngModel)]="flareUp.nomeLider" name="nomeLider">
+      </ion-col>
+      <ion-col col-12>
+        <input type="tel" placeholder="Telefone:" [(ngModel)]="flareUp.telefone" name="telefone">
+      </ion-col>
+      <ion-col col-12>
+        <input type="email" placeholder="Email:" [(ngModel)]="flareUp.email" name="email">
+      </ion-col>
+      <ion-col col-12>
+        <input type="text" placeholder="Nome da Igreja:" [(ngModel)]="flareUp.nomeIgreja" name="nomeIgreja">
+      </ion-col>
+      <ion-col col-12>
+        <input type="text" placeholder="Nome da escola:" [(ngModel)]="flareUp.nomeEscola" name="nomeEscola">
+      </ion-col>
+      <ion-col col-12>
+        <input type="text" placeholder="Endereço escola:" [(ngModel)]="flareUp.endereco" name="endereco">
+      </ion-col>
+      <button class="btn2Escola" (click)="cadastrar()"><span>CADASTRAR ESCOLA</span></button>
+    </ion-row>
+  </div>
+  <div class="bgMapNone">
+      <div class="titleFlareUp">
+        <h4>Colegio Dinamico</h4>
+      </div>
+      <div class="textoFlareUp">
+        <h5>End Colegio</h5>
+        <h5>Lideres</h5>
+        <h5>Datas e horarios</h5>
+      </div>
+    </div>
+</div>

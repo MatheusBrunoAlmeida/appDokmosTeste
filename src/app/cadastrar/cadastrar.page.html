@@ -1,0 +1,99 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="margin-top: 12px">
+      Dashboard 2.0.3
+      <img src="/assets/logo.png" width="50px" style="float: right;">
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+  <div class="bg">
+    <ion-grid>
+
+      <!-- <ion-row style="margin-left: 20%; margin-top: 10%; color: whitesmoke;">
+        <ion-col col-2>
+          <h1>
+            <p>Seja <br /> bem vindo!
+          </h1>
+        </ion-col>
+      </ion-row> -->
+      <button id="voltar"  (click)="voltar()"><ion-icon class="icon" name="arrow-back"></ion-icon></button>
+      <span>+</span>
+      <div class="formCadastro">
+        <form>
+
+          <h1>CADASTRO DE USUARIOS</h1>
+
+          <div class="inputs formulario">
+            <ion-row justify-content-center class="aling-center">
+              <ion-col col-12>
+                <input type="text" placeholder="Email:" name="email" [(ngModel)]="userRegister.email" style="background-color: rgba(240, 248, 255, 0);">
+              </ion-col>
+            </ion-row>
+            <ion-row justify-content-center class="aling-center">
+              <ion-col col-12>
+                <input type="password" placeholder="Senha" name="senha" [(ngModel)]="userRegister.password"  style="background-color: rgba(240, 248, 255, 0);">
+              </ion-col>
+            </ion-row>
+            <ion-row justify-content-center class="aling-center">
+              <ion-col col-12>
+                <input type="password" placeholder="Confirmar senha" name="confirmarSenha"  style="background-color: rgba(240, 248, 255, 0);">
+              </ion-col>
+            </ion-row>
+            <ion-row justify-content-center class="aling-center">
+              <ion-col col-12>
+                <input type="submit" id="submit" value="CADASTRAR" (click)="register()">
+              </ion-col>
+            </ion-row>
+            
+
+
+          </div>
+
+
+
+          <!-- <div class="inputs formulario">
+            <ion-row justify-content-center class="aling-center">
+              <ion-col col-12>
+                <input type="text" placeholder="Email:" name="email" style="background-color: rgba(240, 248, 255, 0);">
+              </ion-col>
+            </ion-row>
+            <ion-row justify-content-center class="aling-center">
+              <ion-col col-12>
+                <input type="password" placeholder="Senha:" name="senha"
+                  style="background-color: rgba(240, 248, 255, 0);">
+              </ion-col>
+            </ion-row>
+            <ion-row justify-content-center class="aling-center">
+              <ion-col col-12>
+                <input type="submit" id="submit" value="ENTRAR">
+              </ion-col>
+            </ion-row>
+            <ion-row justify-content-center class="aling-center">
+              <ion-col col-12>
+                <a href="#">Esqueceu sua senha?</a>
+              </ion-col>
+            </ion-row>
+            <ion-row justify-content-center class="aling-center">
+              <ion-col col-12 routerLink="/vistoria">
+                <a href="#">Registrar</a>
+              </ion-col>
+            </ion-row>
+            <button id="facebook">
+              <ion-icon class="icon" name="logo-facebook"></ion-icon>Entrar com o facebook
+            </button> -->
+
+          <!-- </div> -->
+        </form>
+      </div>
+
+
+    </ion-grid>
+  </div>
+
+</ion-content>

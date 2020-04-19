@@ -1,0 +1,60 @@
+<svg width="238.13mm" height="252.64mm" inkscape:version="0.92.4 (5da689c313, 2019-01-14)" sodipodi:docname="waves_flareup.svg" version="1.1" viewBox="0 0 238.13 252.64" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" inkscape:current-layer="svg19" inkscape:cx="493.61399" inkscape:cy="463.26886" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="715" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:zoom="0.48368299" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <linearGradient id="a" x1="-103.61" x2="-21.201" y1="112.89" y2="112.89" gradientTransform="matrix(2.899 0 0 2.899 299.96 -200.95)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f8d747" offset="0"/>
+   <stop stop-color="#f1a534" offset="1"/>
+  </linearGradient>
+ </defs>
+
+ <path 
+    fill="url(#a)" 
+    stroke-width="2.899">
+        <animate
+            id="onda2_1"
+            attributeName="d"
+            values="m-4.921e-6 1.0631e-6h238.13v212.7c-36.751-43.259-80.056-28.609-107.5 2.3119-30.518 32.185-68.712 49.5-130.62 28.321z;
+            M -4.921e-6,1.0631e-6 H 238.13 V 212.7 c -4.29059,16.96524 -57.81461,64.26385 -126.13469,3.8147 C 42.104037,150.41678 0.30332444,207.10506 0.00999508,243.3329 Z"
+            begin="0s;onda2_2.end"
+            dur="2.0s"
+        />
+        <animate
+            id="onda2_2"
+            attributeName="d"
+            values="M -4.921e-6,1.0631e-6 H 238.13 V 212.7 c -4.29059,16.96524 -57.81461,64.26385 -126.13469,3.8147 C 42.104037,150.41678 0.30332444,207.10506 0.00999508,243.3329 Z;
+            m-4.921e-6 1.0631e-6h238.13v212.7c-36.751-43.259-80.056-28.609-107.5 2.3119-30.518 32.185-68.712 49.5-130.62 28.321z"
+            begin="onda2_1.end"
+            dur="2.0s"
+        />
+ </path>
+
+ <path 
+    fill="#f8d847" 
+    stroke-width="2.899">
+        <animate
+            id="onda1_1"
+            attributeName="d"
+            values="m-4.921e-6 1.0631e-6h238.13v189.68c-36.751-43.259-80.056-28.609-107.5 2.3119-30.518 32.185-68.712 49.5-130.62 28.321z;
+            M -4.921e-6,1.0631e-6 H 238.13 V 189.68 c 0.51836,12.04392 -23.55084,54.34539 -93.37371,3.21358 C 78.471721,146.63258 19.539124,190.39681 0.00999508,220.3129 Z"
+            begin="0s;onda1_2.end"
+            dur="2s"
+        />
+        <animate
+            id="onda1_2"
+            attributeName="d"
+            values="M -4.921e-6,1.0631e-6 H 238.13 V 189.68 c 0.51836,12.04392 -23.55084,54.34539 -93.37371,3.21358 C 78.471721,146.63258 19.539124,190.39681 0.00999508,220.3129 Z;
+            m-4.921e-6 1.0631e-6h238.13v189.68c-36.751-43.259-80.056-28.609-107.5 2.3119-30.518 32.185-68.712 49.5-130.62 28.321z"
+            begin="onda1_1.end"
+            dur="2s"
+        />
+ </path>
+</svg>
