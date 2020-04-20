@@ -45,15 +45,15 @@
     <div class="bgBaixo">
       <ion-grid>
         <ion-row justify-content-center class="aligin-center flex">
-          <button class="btn1" (click)="getMap()"><span>ONDE ESTAMOS <ion-icon class="icon" name="location"></ion-icon>
+          <button class="btn1" (click)="mapa()"><span>ONDE ESTAMOS <ion-icon class="icon" name="location"></ion-icon>
             </span></button>
           <button class="btn2" (click)="getForm()"><span>CADASTRAR ESCOLA</span></button>
         </ion-row>
       </ion-grid>
     </div>
-  <div class="bgFormNone">
+  <div class="bgForm bgFormNone">
     
-    <ion-row justify-content-center class="aligin-center flex">
+    
       <ion-col col-12>
         <input type="text" placeholder="Nome:" [(ngModel)]="flareUp.nomeLider" name="nomeLider">
       </ion-col>
@@ -73,16 +73,8 @@
         <input type="text" placeholder="Endereço escola:" [(ngModel)]="flareUp.endereco" name="endereco">
       </ion-col>
       <button class="btn2Escola" (click)="cadastrar()"><span>CADASTRAR ESCOLA</span></button>
-    </ion-row>
+    
   </div>
   <div class="bgMapNone">
-      <div class="titleFlareUp">
-        <h4>Colegio Dinamico</h4>
-      </div>
-      <div class="textoFlareUp">
-        <h5>End Colegio</h5>
-        <h5>Lideres</h5>
-        <h5>Datas e horarios</h5>
-      </div>
-    </div>
+      
 </div>

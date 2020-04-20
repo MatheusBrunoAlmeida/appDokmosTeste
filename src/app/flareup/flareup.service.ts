@@ -61,11 +61,11 @@ export class FlareUpService {
               let data = item.data();
               console.log(data);
               let flaraup = {
-                position: { lat: -16.705274, lng: -49.273529 },
-                iconData: {
+                position: { lat: data.latitude, lng: data.longitude },
+                flareUp: {
                   titulo: data.nomeEscola,
                   lideres: data.nomeLider,
-                  diasEHoras: 'Sexta: 9:30h, Segunda: 9:30h'
+                  diasEHoras: data.diasEHoras
                 }
               }
               obj.push(flaraup);

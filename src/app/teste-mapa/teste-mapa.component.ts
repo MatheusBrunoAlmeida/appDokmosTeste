@@ -17,6 +17,7 @@ import {
   BaseArrayClass
 } from '@ionic-native/google-maps';
 import { FlareUp } from '../flareup/flareUp';
+import { parseTemplate } from '@angular/compiler';
 
 
 @Component({
@@ -60,6 +61,12 @@ export class TesteMapaComponent implements OnInit {
       return data.position;
     });
 
+    let titulo = POINTS.map((data:any) =>{
+      return data.flareUp.titulo
+    })
+
+    console.log(titulo)
+
 
     this.map = GoogleMaps.create('map_canvas', {
       camera: {
@@ -67,13 +74,19 @@ export class TesteMapaComponent implements OnInit {
       }
     });
     POINTS.forEach((data: any) => {
+      let icon = {
+        url: '../assets/iconeFogo.png',
+      }
       data.disableAutoPan = true;
       let marker: Marker = this.map.addMarkerSync(data);
       marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(this.onMarkerClick);
       marker.on(GoogleMapsEvent.INFO_CLICK).subscribe(this.onMarkerClick);
+      marker.setIcon(icon)
     });
 
   }
+
+
 
   onMarkerClick(params: any) {
     let marker: Marker = <Marker>params[1];

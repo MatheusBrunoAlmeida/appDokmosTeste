@@ -49,6 +49,10 @@ export class FlareupPage implements OnInit {
     this.router.navigate(['/login'])
   }
 
+  mapa() {
+    this.router.navigate(['/mapa'])
+  }
+
   sucesso(){
     let notification = document.querySelectorAll('.sucesso')[0];
     notification.classList.remove('none')
@@ -68,7 +72,7 @@ export class FlareupPage implements OnInit {
 
     let bgForm = document.querySelectorAll('.bgFormNone')[0];
     bgForm.classList.remove('bgFormNone')
-    bgForm.classList.add('bgForm')
+    
   }
 
   getMap() {
@@ -117,7 +121,6 @@ export class FlareupPage implements OnInit {
 
   voltaInicial(){
     let bgForm = document.querySelectorAll('.bgForm')[0];
-    bgForm.classList.remove('bgForm')
     bgForm.classList.add('bgFormNone')
 
     let descricao = document.querySelectorAll('.none')[0];
