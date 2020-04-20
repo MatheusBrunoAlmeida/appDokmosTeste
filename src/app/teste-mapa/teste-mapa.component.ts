@@ -29,6 +29,7 @@ export class TesteMapaComponent implements OnInit {
   map: GoogleMap;
   loading: any;
   private flareUp: FlareUp
+  public titulo;
 
   constructor(
     public loadingCtrl: LoadingController,
@@ -46,6 +47,7 @@ export class TesteMapaComponent implements OnInit {
       console.log(response);
       this.platform.ready();
       this.loadMap(response);
+      this.titulo = response
     })
   }
 
@@ -58,14 +60,14 @@ export class TesteMapaComponent implements OnInit {
 
     let bounds: ILatLng[] = POINTS.map((data: any, idx: number) => {
       console.log(data);
-      return data.position;
+      return  data.position;
     });
 
     let titulo = POINTS.map((data:any) =>{
       return data.flareUp.titulo
     })
 
-    console.log(titulo)
+    // console.log(titulo)
 
 
     this.map = GoogleMaps.create('map_canvas', {
@@ -78,23 +80,37 @@ export class TesteMapaComponent implements OnInit {
         url: '../assets/iconeFogo.png',
       }
       data.disableAutoPan = true;
+      titulo = data;
+      console.log(titulo)
       let marker: Marker = this.map.addMarkerSync(data);
       marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(this.onMarkerClick);
       marker.on(GoogleMapsEvent.INFO_CLICK).subscribe(this.onMarkerClick);
+      marker.showInfoWindow()
       marker.setIcon(icon)
+      this.setTitle(data)
     });
 
   }
 
+   setTitle(data){
+    let title = data.flareUp.titulo;
+    return title
+  }
 
 
-  onMarkerClick(params: any) {
-    let marker: Marker = <Marker>params[1];
+  onMarkerClick(titulo) {
+    let marker: Marker = <Marker>titulo;
+    let title = this.titulo
+    console.log(title)
     let iconData = document.querySelectorAll('.flareUpNone')[0];
     iconData.classList.remove('flareUpNone');
     iconData.classList.add('flareUp');
   }
 
+  fechar(){
+    let icon = document.querySelectorAll('.flareUp')[0];
+    icon.classList.add('flareUpNone')
+  }
 
 
   async onButtonClick() {
