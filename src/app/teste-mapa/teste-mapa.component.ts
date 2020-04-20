@@ -47,7 +47,6 @@ export class TesteMapaComponent implements OnInit {
       console.log(response);
       this.platform.ready();
       this.loadMap(response);
-      this.titulo = response
     })
   }
 

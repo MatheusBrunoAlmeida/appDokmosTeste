@@ -101,7 +101,7 @@ ion-toolbar {
 
 .btn1 {
   padding: 14px;
-  font-size: 13px;
+  font-size: 68%;
   font-weight: bold;
   background-color: white;
   border: 1px solid rgb(107, 105, 105);
@@ -112,7 +112,7 @@ ion-toolbar {
 
 .btn2 {
   padding: 15px;
-  font-size: 13px;
+  font-size: 68%;
   font-weight: bold;
   background-color: #f8d949;
   border-radius: 15px;
@@ -134,10 +134,11 @@ ion-toolbar {
 
 .descricao {
   position: absolute;
-  top: 36%;
-  font-size: 13px;
-  left: 30px;
-  color: white;
+    top: 43%;
+    font-size: 13px;
+    left: 30px;
+    color: white;
+    font-weight: 500;
 }
 
 .none {
