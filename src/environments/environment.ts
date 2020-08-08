@@ -4,15 +4,7 @@
 
 export const environment = {
   production: false,
-  firebase:{
-    apiKey: "AIzaSyBX2Vl8HL-xz8ija3nD7lxmjGc9DVsUrMw",
-    authDomain: "appdokmos.firebaseapp.com",
-    databaseURL: "https://appdokmos.firebaseio.com",
-    projectId: "appdokmos",
-    storageBucket: "appdokmos.appspot.com",
-    messagingSenderId: "152022806222",
-    appId: "1:152022806222:web:bbf653ee5750f68a9dea9f"
-  }
+  firebase:{'keys'}
 };
 
 /*
